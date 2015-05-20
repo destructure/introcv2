@@ -9,7 +9,8 @@ This intro is going to stick to cv2 and python 2, even though there are many oth
   * https://www.python.org/downloads/
   * or via your package installer
 * install prereqs
- * numpy: http://docs.scipy.org/doc/numpy/user/install.html#binary-installers
+ * numpy: http://sourceforge.net/projects/numpy/files/NumPy/1.9.2/
+ * note: the link on scipy.org leads to an old version of numpy
 * install openCV
   * http://opencv.org/
   * also available via package installers
