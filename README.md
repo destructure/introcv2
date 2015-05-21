@@ -41,4 +41,16 @@ If you don't have a compiler
 * install openCV
   * http://opencv.org/
 * install cv2 bindings for python
-  * already comes with opencv?
+  * copy cv2.pyd to site-packages
+  * [more here](http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_setup/py_setup_in_windows/py_setup_in_windows.html)
+
+## What's next
+
+* see if opencv is working by running hello.py
+* see if your webcam works
+  * sanity check in another app if needed
+  * run livecam.py
+* next steps
+  * read a video?
+  * some detection stuff
+  * frame rate
