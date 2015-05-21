@@ -11,10 +11,12 @@ Numpy and opencv are compiled packages, so either you will need to install binar
 
 ### Linux
 
+Instal with your favorite package manager
+
 * apt-get install python
 * apt-get install python-numpy
 * apt-get install python-opencv
-(or your favorite package manager)
+
 
 ### OSX
 
