@@ -22,7 +22,10 @@ Instal with your favorite package manager
 
 * brew install python
 * pip install numpy
+* brew tap homebrew/science
 * brew install opencv (will require compilation!)
+
+check [here](https://jjyap.wordpress.com/2014/05/24/installing-opencv-2-4-9-on-mac-osx-with-python-support/) for more details
 
 TODO
 
