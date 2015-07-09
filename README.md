@@ -27,8 +27,6 @@ Instal with your favorite package manager
 
 check [here](https://jjyap.wordpress.com/2014/05/24/installing-opencv-2-4-9-on-mac-osx-with-python-support/) for more details
 
-TODO
-
 ### Windows
 
 If you have a compiler
