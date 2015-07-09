@@ -20,6 +20,10 @@ Instal with your favorite package manager
 
 ### OSX
 
+* brew install python
+* pip install numpy
+* brew install opencv (will require compilation!)
+
 TODO
 
 ### Windows
