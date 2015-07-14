@@ -1,23 +1,34 @@
 #!/usr/bin/env python
 
 
-# just see if cv2 is working
-
-
 import cv2
+from frameRate import FrameRate
 
 
 cap = cv2.VideoCapture(0)
+
+
+showFR=FrameRate()
 
 while True:
     success, frame = cap.read()
     if success != True:
         break
-    #print success, frame.shape
+
+
+
+    name=["blue", "green", "red"]
+    for i in range(3):
+        cv2.imshow(name[i], frame[:,:,i] )
+
+
+    showFR.write(frame)
     cv2.imshow("main", frame)
+
     key = cv2.waitKey(10) & 0xff
     if key == 27:
         break
 
 cv2.destroyAllWindows()
 cap.release()
+
