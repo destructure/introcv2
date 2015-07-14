@@ -55,4 +55,4 @@ If you don't have a compiler
 * see if your webcam works
   * sanity check in another app if needed
   * run livecam.py
-* If all that works (do the tutorial)[tut_order.md]
+* If all that works [do the tutorial](tut_order.md)
