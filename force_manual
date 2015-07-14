@@ -1,0 +1,9 @@
+#!/bin/bash
+# force webcam not to change white balance, etc
+# linux and webcam specific
+
+v4l2-ctl -c white_balance_temperature_auto=0
+v4l2-ctl -c exposure_auto=1
+
+#v4l2-ctl -d /dev/video1 -c  gain_automatic=0
+

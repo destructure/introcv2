@@ -1,19 +1,12 @@
 #!/usr/bin/env python
 
-
 import cv2
 import numpy as np
 from frameRate import FrameRate
 
-
-p0 = cv2.VideoCapture(1)
-p1 = cv2.VideoCapture(1)
-
 def smooth(img):
-    kernel=np.ones((9,9)) 
     f2=cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     f2 = cv2.GaussianBlur(f2, (21,21), 0)
-    #f2 = cv2.morphologyEx(f2, cv2.MORPH_OPEN, kernel, iterations=3)
     return f2
 
 class Player:
@@ -66,7 +59,6 @@ class Player:
         self.imshow("main", out)
         return answer
 
-
 p0=Player(0)
 p1=Player(1)
 
@@ -76,7 +68,6 @@ while True:
 
     a0 = p0.getAnswer()
     a1 = p1.getAnswer()
-
     print a0, a1
     if (a0, a1) == last:
         if a0 == "cooperate" and a1 == "cooperate":
@@ -93,18 +84,12 @@ while True:
             score[1] += 4
 
     last = (a0, a1)
-    
     sframe=np.zeros((100,400), np.uint8)
-
     face=cv2.cv.CV_FONT_HERSHEY_SIMPLEX
     scale=1
-
     text= "p0: %5d, p1 %5d" % tuple(score)
     cv2.putText(sframe,text, (20,40), face, scale, (255,255,255))
     cv2.imshow("score", sframe)
-
-
-
     key = cv2.waitKey(10) & 0xff
     if key == 27:
         break
@@ -112,4 +97,3 @@ while True:
 cv2.destroyAllWindows()
 p0.release()
 p1.release()
-
