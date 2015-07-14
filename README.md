@@ -55,7 +55,4 @@ If you don't have a compiler
 * see if your webcam works
   * sanity check in another app if needed
   * run livecam.py
-* next steps
-  * read a video?
-  * some detection stuff
-  * frame rate
+* If all that works [do the tutorial](tut_order.md)
