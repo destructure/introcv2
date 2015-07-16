@@ -28,3 +28,4 @@ These are still under 100 lines. They put together some of the concepts above.
 * motionDetect.py
 * thumbs.py
 * prisoner.py
+* looming.py
